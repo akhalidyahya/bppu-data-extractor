@@ -139,7 +139,7 @@ try {
         'b8_jenis_dokumen' => $b8_jenis_dokumen,
         'b8_tanggal' => $b8_tanggal,
         'b9' => extractBetween($text, 'B.9 	Nomor Dokumen :', 'B.10'),
-        'c1' => trim((explode(':', extractBetween($text, 'C.2', 'C.3'))[1] ?? '')),
+        'c1' => trim((explode(':', extractBetween($text, 'C.1', 'C.2'))[1] ?? '')),
         'c3' => trim((explode(':', extractBetween($text, 'C.3', 'C.4'))[1] ?? '')),
         'c4' => extractBetween($text, 'C.4TANGGAL	:', 'C.5'),
         'c5' => extractBetween($text, 'C.5NAMA PENANDATANGAN	:', 'C.6'),
